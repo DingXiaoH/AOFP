@@ -16,6 +16,7 @@ Citation:
     booktitle={International Conference on Machine Learning},
     pages={1607--1616},
     year={2019}
+    }
 
 ## Introduction
 
