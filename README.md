@@ -50,7 +50,16 @@ python aofp/aofp_standalone.py prune
 cat bds_overall_logs.txt | grep fted
 ```
 
+## Acknowledgement
+
+The backbone of the codes is based on the Tensorflow benchmarks codes: https://github.com/tensorflow/benchmarks/tree/master/scripts/tf_cnn_benchmarks
+
 ## Contact
+
 dxh17@mails.tsinghua.edu.cn
 
 Google Scholar Profile: https://scholar.google.com/citations?user=CIjw0KoAAAAJ&hl=en
+
+
+
+
