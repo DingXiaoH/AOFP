@@ -10,13 +10,12 @@ I will re-implement this using pytorch after finishing my pytorch experiment pla
 
 Citation:
 
-	@inproceedings{ding2019approximated,
+    @inproceedings{ding2019approximated,
     title={Approximated Oracle Filter Pruning for Destructive CNN Width Optimization},
     author={Ding, Xiaohan and Ding, Guiguang and Guo, Yuchen and Han, Jungong and Yan, Chenggang},
     booktitle={International Conference on Machine Learning},
     pages={1607--1616},
     year={2019}
-  }
 
 ## Introduction
 
