@@ -1,12 +1,12 @@
 # Approximated Oracle Filter Pruning for Destructive CNN Width Optimization
 
+I will release PyTorch codes in two weeks.
+
 This repository contains the codes for the following ICML-2019 paper 
 
 [Approximated Oracle Filter Pruning for Destructive CNN Width Optimization](http://proceedings.mlr.press/v97/ding19a.html).
 
 The codes are based on Tensorflow 1.11.
-
-I will re-implement this using pytorch after finishing my pytorch experiment platform. Maybe in two months.
 
 Citation:
 
