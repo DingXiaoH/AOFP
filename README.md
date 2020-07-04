@@ -1,6 +1,6 @@
 # Approximated Oracle Filter Pruning for Destructive CNN Width Optimization
 
-UPDATE: working on pytorch implementation.
+UPDATE: pytorch implementation finished. Testing.
 
 I will release PyTorch codes in two weeks.
 
