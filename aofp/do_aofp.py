@@ -40,20 +40,11 @@ if __name__ == '__main__':
         warmup_iterations = 500
         flops_remain_target = 0.35
 
-        # aofp_lrs = LRSchedule(base_lr=0.01, max_epochs=200, lr_epoch_boundaries=None, lr_decay_factor=None,
-        #                  linear_final_lr=None, cosine_minimum=0)
-        # aofp_lrs = LRSchedule(base_lr=0.001, max_epochs=1000, lr_epoch_boundaries=[1000], lr_decay_factor=0.1,
-        #                  linear_final_lr=None, cosine_minimum=None)
-        # finetune_lrs = LRSchedule(base_lr=0.002, max_epochs=600, lr_epoch_boundaries=None, lr_decay_factor=None,
-        #                  linear_final_lr=None, cosine_minimum=0)
-
         aofp_lrs = LRSchedule(base_lr=0.001, max_epochs=600, lr_epoch_boundaries=[600], lr_decay_factor=0.1,
                               linear_final_lr=None, cosine_minimum=None)
         finetune_lrs = LRSchedule(base_lr=0.01, max_epochs=600, lr_epoch_boundaries=None, lr_decay_factor=None,
                          linear_final_lr=None, cosine_minimum=0)
 
-        # finetune_lrs = LRSchedule(base_lr=0.04, max_epochs=400, lr_epoch_boundaries=None, lr_decay_factor=None,
-        #                  linear_final_lr=None, cosine_minimum=0)
 
     elif network_type == 'src56':
         weight_decay_strength = 1e-4
@@ -69,20 +60,10 @@ if __name__ == '__main__':
         warmup_iterations = 500
         flops_remain_target = 0.50
 
-        # aofp_lrs = LRSchedule(base_lr=0.01, max_epochs=200, lr_epoch_boundaries=None, lr_decay_factor=None,
-        #                  linear_final_lr=None, cosine_minimum=0)
-        # finetune_lrs = LRSchedule(base_lr=0.04, max_epochs=400, lr_epoch_boundaries=None, lr_decay_factor=None,
-        #                  linear_final_lr=None, cosine_minimum=0)
         aofp_lrs = LRSchedule(base_lr=0.001, max_epochs=600, lr_epoch_boundaries=[600], lr_decay_factor=0.1,
                               linear_final_lr=None, cosine_minimum=None)
         finetune_lrs = LRSchedule(base_lr=0.01, max_epochs=600, lr_epoch_boundaries=None, lr_decay_factor=None,
                          linear_final_lr=None, cosine_minimum=0)
-
-        # aofp_lrs = LRSchedule(base_lr=0.001, max_epochs=1000, lr_epoch_boundaries=[1000], lr_decay_factor=0.1,
-        #                       linear_final_lr=None, cosine_minimum=None)
-        # finetune_lrs = LRSchedule(base_lr=0.05, max_epochs=600, lr_epoch_boundaries=None, lr_decay_factor=None,
-        #                           linear_final_lr=None, cosine_minimum=0)
-        #
 
 
     elif network_type == 'lenet5bn':
@@ -93,13 +74,6 @@ if __name__ == '__main__':
         init_hdf5 = 'lenet5bn_lrsA.hdf5'
         flops_func = calculate_lenet5bn_flops
 
-
-        # target_layers = [0, 1]
-        # iters_per_half = 100
-        # thresh = 0.2
-        # warmup_iterations = 100
-        # lrs = LRSchedule(base_lr=0.05, max_epochs=40, lr_epoch_boundaries=None, lr_decay_factor=None,
-        #                  linear_final_lr=None, cosine_minimum=0)
 
         target_layers = [0, 1]
         iters_per_half = 400
